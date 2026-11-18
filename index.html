@@ -3,7 +3,7 @@
 <title>반도체 채용 공고</title><meta name="robots" content="noindex,nofollow">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🔔%3C/text%3E%3C/svg%3E">
 <style>
-:root{--ss:#1f4fd6;--sk:#e4002b;--ink:#1d2330;--mute:#7a8193;--bg:#f3f5fa;--card:#fff;--open:#12a150;--soon:#d98a00;--closed:#9aa0ad;--hot:#e5484d}
+:root{--ss:#1428a0;--sk:#e4002b;--new:#7c3aed;--exp:#111827;--ink:#1d2330;--mute:#7a8193;--bg:#f3f5fa;--card:#fff;--open:#16a34a;--hot:#ea580c;--soon:#eab308;--closed:#9ca3af}
 *{box-sizing:border-box}body{margin:0;font-family:'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
 header{background:linear-gradient(120deg,#16203a,#26345c);color:#fff;padding:22px 20px 18px}
 .wrap{max-width:980px;margin:0 auto}h1{margin:0;font-size:22px;letter-spacing:-.3px}.sub{opacity:.75;font-size:13px;margin-top:4px}
@@ -18,19 +18,22 @@ header{background:linear-gradient(120deg,#16203a,#26345c);color:#fff;padding:22p
 @media(max-width:520px){header{padding:18px 14px 14px}h1{font-size:20px}.stats{gap:8px}.stat{min-width:0;flex:1 1 calc(33% - 8px);padding:8px 10px}.stat b{font-size:19px}.tab{padding:8px 13px;font-size:13px}.chip{padding:6px 10px;font-size:12px}.card{padding:12px 13px 10px}.title{font-size:15px}.url{display:none}}
 .col h2{font-size:16px;margin:8px 2px 10px;display:flex;align-items:center;gap:8px}.col h2 .n{font-size:13px;color:var(--mute);font-weight:400}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block}
-.card{display:block;background:var(--card);border-radius:14px;padding:14px 16px 12px;margin-bottom:12px;box-shadow:0 1px 3px #0000000f,0 4px 14px #0000000a;border-left:6px solid var(--closed);text-decoration:none;color:inherit;transition:transform .08s}
-.card.open{border-left-color:var(--open)}.card.soon{border-left-color:var(--soon)}.card.closed{opacity:.62}
-.top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.co{font-size:12px;font-weight:800;color:#fff;padding:3px 8px;border-radius:6px}.co.ss{background:var(--ss)}.co.sk{background:var(--sk)}
-.ty{font-size:12px;padding:3px 8px;border-radius:6px;background:#eef1f7;color:#3a4256}.new{font-size:11px;background:#ff3b5c;color:#fff;padding:3px 6px;border-radius:6px;font-weight:700}
-.st{margin-left:auto;font-size:12px;font-weight:800;padding:4px 10px;border-radius:99px;white-space:nowrap}
-.st.open{background:#e3f6ea;color:var(--open)}.st.hot{background:#fde7e8;color:var(--hot)}.st.soon{background:#fff3dc;color:var(--soon)}.st.closed{background:#eceef2;color:#6b7180}
+.col h2.h-new{color:var(--new)}.col h2.h-exp{color:var(--exp)}
+.legend{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;background:#fff;border-radius:12px;padding:10px 14px;margin-top:14px;font-size:12px;color:#4b5563;box-shadow:0 1px 3px #0000000d}.legend .g{display:flex;gap:6px;align-items:center;flex-wrap:wrap}.legend .lab{font-weight:800;color:#111827;margin-right:2px}.legend .st{margin-left:0}
+.card{display:block;background:var(--card);border-radius:14px;padding:14px 16px 12px;margin-bottom:12px;box-shadow:0 1px 3px #0000000f,0 4px 14px #0000000a;border-left:8px solid var(--closed);text-decoration:none;color:inherit}
+.card.c-ss{border-left-color:var(--ss)}.card.c-sk{border-left-color:var(--sk)}
+.card.open{box-shadow:0 0 0 2px #16a34a55,0 4px 14px #0000000f}.card.closed{background:#eceef1;box-shadow:none}.card.closed .title,.card.closed .period,.card.closed .jobs{color:#8a909c}.card.closed .co,.card.closed .ty{opacity:.55}
+.top{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.co{font-size:12px;font-weight:800;color:#fff;padding:4px 9px;border-radius:4px}.co.ss{background:var(--ss)}.co.sk{background:var(--sk)}
+.ty{font-size:12px;font-weight:800;padding:2px 9px;border-radius:99px;background:#fff;border:2px solid #9ca3af;color:#4b5563}.ty.t-new{border-color:var(--new);color:var(--new)}.ty.t-exp{border-color:var(--exp);color:var(--exp)}.ty.t-both{border-color:var(--new);color:var(--exp);border-style:dashed}.new{font-size:15px;line-height:1}
+.st{margin-left:auto;font-size:12px;font-weight:800;padding:5px 11px;border-radius:99px;white-space:nowrap;color:#fff}
+.st.open{background:var(--open)}.st.hot{background:var(--hot)}.st.soon{background:var(--soon);color:#3b2f00}.st.closed{background:var(--closed)}.st.unlisted{background:#fff;color:#6b7280;border:2px dashed #9ca3af;padding:3px 9px}
 .title{display:block;font-size:16px;font-weight:700;margin:9px 0 6px;line-height:1.35;color:inherit;text-decoration:none}.title:hover{text-decoration:underline}
 .linkrow{display:flex;align-items:center;gap:8px;margin-top:10px;padding-top:9px;border-top:1px dashed #e3e7ef}
 .go{flex:none;background:#16203a;color:#fff;text-decoration:none;font-size:13px;font-weight:700;padding:6px 12px;border-radius:8px}.go:hover{background:#2c3d6b}
 .url{flex:1;min-width:0;font-size:12px;color:#3a4ea0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .copy{flex:none;border:1px solid #cfd5e3;background:#fff;border-radius:8px;font-size:12px;padding:5px 9px;cursor:pointer;color:#3a4256}.copy.done{background:#e3f6ea;border-color:#9fd9b4;color:#12a150}
 .period{font-size:13px;color:#4b5266}.unit{font-size:12px;color:var(--mute);margin-top:3px}
-.prog{height:6px;background:#edf0f5;border-radius:99px;margin-top:9px;overflow:hidden}.prog i{display:block;height:100%;background:var(--open);border-radius:99px}.card.closed .prog i{background:var(--closed)}
+.prog{height:6px;background:#edf0f5;border-radius:99px;margin-top:9px;overflow:hidden}.prog i{display:block;height:100%;background:var(--open);border-radius:99px}.card.hot .prog i{background:var(--hot)}.card.closed .prog i{background:var(--closed)}
 .jobs{font-size:12px;color:#596075;margin-top:7px;line-height:1.5}
 .empty{background:#fff;border:1px dashed #cfd5e3;border-radius:14px;padding:22px;text-align:center;color:var(--mute);font-size:14px}
 footer{color:var(--mute);font-size:12px;margin:26px 0 30px;line-height:1.7}footer a{color:#3a4ea0}
@@ -39,6 +42,7 @@ footer{color:var(--mute);font-size:12px;margin:26px 0 30px;line-height:1.7}foote
 <div class="stats" id="stats"></div></div></header>
 <div class="wrap" style="padding:0 16px">
 <div id="err"></div>
+<div class="legend"><div class="g"><span class="lab">회사</span><span class="co ss">삼성전자</span><span class="co sk">SK하이닉스</span></div><div class="g"><span class="lab">구분</span><span class="ty t-new">🌱 신입</span><span class="ty t-exp">💼 경력</span></div><div class="g"><span class="lab">지원</span><span class="st open">✅ 지원 가능</span><span class="st hot">🔥 마감 임박</span><span class="st soon">⏳ 접수 예정</span><span class="st closed">⛔ 마감</span></div><div class="g"><span class="new">🆕</span>7일 안 새 공고</div></div>
 <div class="bar"><button class="tab on" data-tab="all">전체</button><button class="tab" data-tab="new">신입</button><button class="tab" data-tab="exp">경력</button><span class="sp"></span>
 <button class="chip on" data-co="all">두 회사</button><button class="chip" data-co="삼성전자">삼성전자</button><button class="chip" data-co="SK하이닉스">SK하이닉스</button><button class="chip" id="onlyOpen">지원 가능만</button></div>
 <div class="cols" id="cols"></div>
@@ -48,7 +52,7 @@ footer{color:var(--mute);font-size:12px;margin:26px 0 30px;line-height:1.7}foote
 · 반도체 직군만: 연구개발·설계·공정·소자·제조·장비·설비·품질·패키지·테스트 등. 의료·경영지원·재무·인사·법무·영업·마케팅·구매·안전보건·건설/플랜트·일반 IT는 빼요. 해외 지사·법인 공고(근무지가 해외뿐인 공고)와 인사팀 시험용 공고도 빼요. 공식: <a href="https://www.samsungcareers.com/hr/" target="_blank">삼성 채용</a> · <a href="https://www.skcareers.com/Recruit/Index" target="_blank">SK Careers</a></footer>
 </div>
 <script>
-const DATA = {"checkedKst":"2026-11-19 06:30","errors":[],"jobs":[{"key":"skhynix:R262381","company":"SK하이닉스","unit":"제조/Maintenance • 제조/Operator","title":"[11월] Talent hy-way (Maintenance/Operator)","type":"신입","start":"2026.11.10","end":"2026.11.17","startAt":"2026-11-10T00:00:00+09:00","endAt":"2026-11-17T15:00:00+09:00","endTimeKnown":true,"jobs":["제조/Maintenance","제조/Operator"],"url":"https://www.skcareers.com/Recruit/Detail/R262381","firstSeenAt":"2026-11-09T15:00:00.000Z","closedAt":"2026-11-18T20:55:59.921Z"},{"key":"samsung:23470","company":"삼성전자","unit":"DS부문","title":"2026년 하반기 DS부문 5급 설비/인프라엔지니어직 채용","type":"신입","start":"2026.11.10","end":"2026.11.17","startAt":"2026-11-10T10:00:00+09:00","endAt":"2026-11-17T17:00:00+09:00","endTimeKnown":true,"jobs":["설비엔지니어직","인프라엔지니어직(ERT)","인프라엔지니어직(Facility)","인프라엔지니어직(Gas/Chemical)"],"url":"https://www.samsungcareers.com/hr/?no=23470","firstSeenAt":"2026-11-10T01:00:00.000Z","closedAt":"2026-11-18T21:17:53.699Z"},{"key":"skhynix:R262302","company":"SK하이닉스","unit":"안전보건/환경관리 • Tech R&D/HBM Digital Design(SoC Design) • Tech R&D/HBM Digital Design(Front/end) • Tech R&D/HBM Digital Design(Back/end) • Tech R&D/HBM Digital Design(RTL design) • Tech R&D/회로설계(HBM) • Tech R&D/회로 설계 • Tech R&D/HBM Digital Design(검증) • Tech R&D/Product Engineering • Tech R&D/Module설계 • Tech R&D/SI/PI • Tech R&D/Analog 설계 • Tech R&D/Digital Design(Front&Back/end) • Tech R&D/NAND 설계","title":"[Oct.] Monthly hy-way(Experienced)","type":"경력","start":"2026.10.21","end":"2026.11.02","startAt":"2026-10-21T00:00:00+09:00","endAt":"2026-11-02T17:00:00+09:00","endTimeKnown":true,"jobs":["Tech R&D/HBM Digital Design(SoC Design)","Tech R&D/HBM Digital Design(Front/end)","Tech R&D/HBM Digital Design(Back/end)","Tech R&D/HBM Digital Design(RTL design)","Tech R&D/회로설계(HBM)","Tech R&D/회로 설계","Tech R&D/HBM Digital Design(검증)","Tech R&D/Product Engineering","Tech R&D/Module설계","Tech R&D/SI/PI","Tech R&D/Analog 설계","Tech R&D/Digital Design(Front&Back/end)"],"url":"https://www.skcareers.com/Recruit/Detail/R262302","firstSeenAt":"2026-10-20T15:00:00.000Z","closedAt":"2026-11-18T21:17:53.699Z"}]};
+const DATA = {"checkedKst":"2026-11-19 06:37","errors":[],"jobs":[{"key":"skhynix:R262381","company":"SK하이닉스","unit":"제조/Maintenance • 제조/Operator","title":"[11월] Talent hy-way (Maintenance/Operator)","type":"신입","start":"2026.11.10","end":"2026.11.17","startAt":"2026-11-10T00:00:00+09:00","endAt":"2026-11-17T15:00:00+09:00","endTimeKnown":true,"jobs":["제조/Maintenance","제조/Operator"],"url":"https://www.skcareers.com/Recruit/Detail/R262381","firstSeenAt":"2026-11-09T15:00:00.000Z","closedAt":"2026-11-18T20:55:59.921Z"},{"key":"samsung:23470","company":"삼성전자","unit":"DS부문","title":"2026년 하반기 DS부문 5급 설비/인프라엔지니어직 채용","type":"신입","start":"2026.11.10","end":"2026.11.17","startAt":"2026-11-10T10:00:00+09:00","endAt":"2026-11-17T17:00:00+09:00","endTimeKnown":true,"jobs":["설비엔지니어직","인프라엔지니어직(ERT)","인프라엔지니어직(Facility)","인프라엔지니어직(Gas/Chemical)"],"url":"https://www.samsungcareers.com/hr/?no=23470","firstSeenAt":"2026-11-10T01:00:00.000Z","closedAt":"2026-11-18T21:17:53.699Z"},{"key":"skhynix:R262302","company":"SK하이닉스","unit":"안전보건/환경관리 • Tech R&D/HBM Digital Design(SoC Design) • Tech R&D/HBM Digital Design(Front/end) • Tech R&D/HBM Digital Design(Back/end) • Tech R&D/HBM Digital Design(RTL design) • Tech R&D/회로설계(HBM) • Tech R&D/회로 설계 • Tech R&D/HBM Digital Design(검증) • Tech R&D/Product Engineering • Tech R&D/Module설계 • Tech R&D/SI/PI • Tech R&D/Analog 설계 • Tech R&D/Digital Design(Front&Back/end) • Tech R&D/NAND 설계","title":"[Oct.] Monthly hy-way(Experienced)","type":"경력","start":"2026.10.21","end":"2026.11.02","startAt":"2026-10-21T00:00:00+09:00","endAt":"2026-11-02T17:00:00+09:00","endTimeKnown":true,"jobs":["Tech R&D/HBM Digital Design(SoC Design)","Tech R&D/HBM Digital Design(Front/end)","Tech R&D/HBM Digital Design(Back/end)","Tech R&D/HBM Digital Design(RTL design)","Tech R&D/회로설계(HBM)","Tech R&D/회로 설계","Tech R&D/HBM Digital Design(검증)","Tech R&D/Product Engineering","Tech R&D/Module설계","Tech R&D/SI/PI","Tech R&D/Analog 설계","Tech R&D/Digital Design(Front&Back/end)"],"url":"https://www.skcareers.com/Recruit/Detail/R262302","firstSeenAt":"2026-10-20T15:00:00.000Z","closedAt":"2026-11-18T21:17:53.699Z"}]};
 const DAY = 864e5;
 let tab = 'all', co = 'all', onlyOpen = false;
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -56,16 +60,16 @@ const fmt = (t) => { const d = new Date(t); return (d.getMonth() + 1) + '/' + d.
 function status(j, now) {
   const s = j.startAt ? Date.parse(j.startAt) : NaN, e = j.endAt ? Date.parse(j.endAt) : NaN;
   // 공개 목록에서 한 번도 못 봤고(지난 공고 모으기로만 찾음) 마감일 전에 빠진 공고 = 링크로만 열리는 비공개·조기 종료 공고
-  if (j.closedAt && !j.lastSeenAt && !isNaN(e) && Date.parse(j.closedAt) < e) return { k: 'closed', label: '공개 목록에 없음', rank: 3 };
-  if (j.closedAt) return { k: 'closed', label: '마감', rank: 3 };
-  if (!isNaN(s) && now < s) { const d = Math.ceil((s - now) / DAY); return { k: 'soon', label: d <= 1 ? '곧 접수 시작' : '접수 예정 · ' + d + '일 뒤', rank: 2 }; }
-  if (!isNaN(e) && now > e) return { k: 'closed', label: '마감', rank: 3 };
-  if (isNaN(e)) return { k: 'open', label: '지원 가능', rank: 1 };
+  if (j.closedAt && !j.lastSeenAt && !isNaN(e) && Date.parse(j.closedAt) < e) return { k: 'closed', unlisted: true, label: '❔ 공개 목록에 없음', rank: 3 };
+  if (j.closedAt) return { k: 'closed', label: '⛔ 마감', rank: 3 };
+  if (!isNaN(s) && now < s) { const d = Math.ceil((s - now) / DAY); return { k: 'soon', label: d <= 1 ? '⏳ 곧 접수 시작' : '⏳ 접수 예정 · ' + d + '일 뒤', rank: 2 }; }
+  if (!isNaN(e) && now > e) return { k: 'closed', label: '⛔ 마감', rank: 3 };
+  if (isNaN(e)) return { k: 'open', label: '✅ 지원 가능', rank: 1 };
   const left = e - now, dd = Math.floor(left / DAY);
   const hm = j.endTimeKnown ? ' ' + String(new Date(e).getHours()).padStart(2, '0') + ':' + String(new Date(e).getMinutes()).padStart(2, '0') : '';
-  if (left < DAY && new Date(e).toDateString() === new Date(now).toDateString()) return { k: 'open', hot: true, label: '오늘 마감' + hm, rank: 0 };
-  if (left < 2 * DAY) return { k: 'open', hot: true, label: '내일 마감' + hm, rank: 0 };
-  return { k: 'open', hot: dd < 3, label: (dd < 3 ? '마감 임박 · ' : '지원 가능 · ') + 'D-' + dd, rank: dd < 3 ? 0 : 1 };
+  if (left < DAY && new Date(e).toDateString() === new Date(now).toDateString()) return { k: 'open', hot: true, label: '🔥 오늘 마감' + hm, rank: 0 };
+  if (left < 2 * DAY) return { k: 'open', hot: true, label: '🔥 내일 마감' + hm, rank: 0 };
+  return { k: 'open', hot: dd < 3, label: (dd < 3 ? '🔥 마감 임박 · ' : '✅ 지원 가능 · ') + 'D-' + dd, rank: dd < 3 ? 0 : 1 };
 }
 // parse.js windowStart와 같은 계산: 오늘(KST)에서 한 달 + 하루 전 00:00 KST
 function windowStart(now) { const k = new Date(now + 9 * 3600e3), y = k.getUTCFullYear(), m = k.getUTCMonth(); const pd = new Date(Date.UTC(y, m, 0)).getUTCDate(); return Date.UTC(y, m - 1, Math.min(k.getUTCDate(), pd) - 1) - 9 * 3600e3; }
@@ -77,8 +81,11 @@ function card(j, now) {
   const pct = isNaN(s) || isNaN(e) ? 0 : Math.max(0, Math.min(100, ((now - s) / (e - s)) * 100));
   const isNew = now - Date.parse(j.firstSeenAt) < 7 * DAY;
   const u = esc(j.url);
-  return '<div class="card ' + st.k + '"><div class="top"><span class="co ' + (j.company === '삼성전자' ? 'ss' : 'sk') + '">' + esc(j.company) + '</span><span class="ty">' + esc(j.type) + '</span>' + (isNew ? '<span class="new">NEW</span>' : '') +
-    '<span class="st ' + (st.hot ? 'hot' : st.k) + '">' + esc(st.label) + '</span></div><a class="title" href="' + u + '" target="_blank" rel="noopener">' + esc(j.title) + '</a><div class="period">📅 ' + esc(j.start) + ' ~ ' + esc(j.end) + (j.endTimeKnown && !isNaN(e) ? ' ' + fmt(e).split(' ')[1] : '') + (j.closedAt && (isNaN(e) || Date.parse(j.closedAt) < e) ? (j.lastSeenAt ? ' · 사이트에서 내려감 ' + fmt(j.closedAt).split(' ')[0] : ' · 공개 목록에 없어요(링크로만 열려요). 지원 가능한지 공고에서 확인하세요') : '') + '</div>' +
+  const cc = j.company === '삼성전자' ? 'ss' : 'sk';
+  const tyc = j.type === '경력' ? 't-exp' : j.type === '신입·경력' ? 't-both' : 't-new';
+  const tyl = (j.type === '경력' ? '💼 ' : j.type === '신입·경력' ? '🌱💼 ' : '🌱 ') + j.type;
+  return '<div class="card ' + st.k + (st.hot ? ' hot' : '') + ' c-' + cc + '"><div class="top"><span class="co ' + cc + '">' + esc(j.company) + '</span><span class="ty ' + tyc + '">' + esc(tyl) + '</span>' + (isNew ? '<span class="new" title="7일 안에 새로 올라온 공고">🆕</span>' : '') +
+    '<span class="st ' + (st.unlisted ? 'unlisted' : st.hot ? 'hot' : st.k) + '">' + esc(st.label) + '</span></div><a class="title" href="' + u + '" target="_blank" rel="noopener">' + esc(j.title) + '</a><div class="period">📅 ' + esc(j.start) + ' ~ ' + esc(j.end) + (j.endTimeKnown && !isNaN(e) ? ' ' + fmt(e).split(' ')[1] : '') + (j.closedAt && (isNaN(e) || Date.parse(j.closedAt) < e) ? (j.lastSeenAt ? ' · 사이트에서 내려감 ' + fmt(j.closedAt).split(' ')[0] : ' · 공개 목록에 없어요(링크로만 열려요). 지원 가능한지 공고에서 확인하세요') : '') + '</div>' +
     (j.unit && !(j.company === 'SK하이닉스' && j.jobs && j.jobs.length) ? '<div class="unit">' + esc(j.unit) + '</div>' : '') + (st.k !== 'soon' ? '<div class="prog"><i style="width:' + (st.k === 'closed' ? 100 : pct) + '%"></i></div>' : '') +
     (j.jobs && j.jobs.length ? '<div class="jobs">직무: ' + j.jobs.map(esc).join(' · ') + '</div>' : '') +
     '<div class="linkrow"><a class="go" href="' + u + '" target="_blank" rel="noopener">🔗 공고 열기</a><a class="url" href="' + u + '" target="_blank" rel="noopener">' + u + '</a><button class="copy" data-url="' + u + '">복사</button></div></div>';
@@ -100,10 +107,10 @@ function render() {
   ].map(([a, b]) => '<div class="stat"><b>' + b + '</b><span>' + a + '</span></div>').join('');
   if (onlyOpen) list = list.filter((j) => status(j, now).k !== 'closed');
   const sort = (a, b) => status(a, now).rank - status(b, now).rank || (Date.parse(a.endAt) || 9e15) - (Date.parse(b.endAt) || 9e15) || b.firstSeenAt.localeCompare(a.firstSeenAt);
-  const col = (name, color, arr) => '<div class="col"><h2><span class="dot" style="background:' + color + '"></span>' + name + ' <span class="n">' + arr.filter((j) => status(j, now).k === 'open').length + '건 지원 가능 / 전체 ' + arr.length + '</span></h2>' + (arr.length ? arr.sort(sort).map((j) => card(j, now)).join('') : '<div class="empty">' + name + ' 공고가 아직 없어요.<br>새로 올라오면 알림으로 알려 드릴게요.</div>') + '</div>';
+  const col = (name, color, arr) => '<div class="col"><h2 class="' + (name === '신입' ? 'h-new' : 'h-exp') + '"><span class="dot" style="background:' + color + '"></span>' + (name === '신입' ? '🌱 ' : '💼 ') + name + ' <span class="n">' + arr.filter((j) => status(j, now).k === 'open').length + '건 지원 가능 / 전체 ' + arr.length + '</span></h2>' + (arr.length ? arr.sort(sort).map((j) => card(j, now)).join('') : '<div class="empty">' + name + ' 공고가 아직 없어요.<br>새로 올라오면 알림으로 알려 드릴게요.</div>') + '</div>';
   const cols = document.getElementById('cols');
-  if (tab === 'all') { cols.style.gridTemplateColumns = ''; cols.innerHTML = col('신입', '#12a150', list.filter(inNew)) + col('경력', '#d9822b', list.filter(inExp)); }
-  else { cols.style.gridTemplateColumns = 'minmax(0,1fr)'; cols.innerHTML = tab === 'new' ? col('신입', '#12a150', list.filter(inNew)) : col('경력', '#d9822b', list.filter(inExp)); }
+  if (tab === 'all') { cols.style.gridTemplateColumns = ''; cols.innerHTML = col('신입', '#7c3aed', list.filter(inNew)) + col('경력', '#111827', list.filter(inExp)); }
+  else { cols.style.gridTemplateColumns = 'minmax(0,1fr)'; cols.innerHTML = tab === 'new' ? col('신입', '#7c3aed', list.filter(inNew)) : col('경력', '#111827', list.filter(inExp)); }
 }
 document.querySelectorAll('.tab').forEach((b) => b.onclick = () => { tab = b.dataset.tab; document.querySelectorAll('.tab').forEach((x) => x.classList.toggle('on', x === b)); render(); });
 document.querySelectorAll('[data-co]').forEach((b) => b.onclick = () => { co = b.dataset.co; document.querySelectorAll('[data-co]').forEach((x) => x.classList.toggle('on', x === b)); render(); });
